@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.chaitanya.com</title>
+    <style>
+        nav {
+            background-color:black ;
+            position: fixed;
+            top: 0;
+            height: 12%;
+            width: 100%;
+            z-index: 1000;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        .nav-left, .nav-right {
+            display: flex;
+            align-items: center;
+        }
+        
+        ul li {
+            margin-left: 10px;
+        }
+        li a {
+            text-decoration: none;
+            
+            color: gainsboro;
+            border: 1px solid white;
+            border-radius: 50px;
+            padding: 5px 15px;
+            transition: all 0.3s ease;
+        }
+        li a:hover {
+            box-shadow: 5px 5px 20px 5px white;
+            background-color: white;
+            color: black;
+        }
+        body {
+            background-color: gainsboro;
+            color: black;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .title {
+            margin-left: 200px;
+            margin-top: 150px;
+             
+        }
+        .para {
+            margin-left: 200px;
+             
+        }
+        .icons{
+                margin-left:230px ;
+                margin-bottom: 15px;
+            }
+        .logo {
+            width: 60px;
+            margin-right: 10px;
+            border-radius: 50%;
+            height: 50px;
+        }
+        .logoname {
+            color: gainsboro;
+            font-size: 18px;
+        }
+        .logoname:hover, .logo:hover {
+            box-shadow: 5px 5px 20px 5px gainsboro;
+        }
+        .button{
+            margin-left: 180px;
+            text-decoration: none;
+            background-color: rgb(98, 160, 4);
+            border-radius: 10px;
+            color: white;
+            padding: 10px 20px;
+        }
+        .button:hover{
+            background-color:#45a049;
+        }
+        .swrnimg{
+            width: 70px;
+            margin-left: 20px;
+            height: 60px;
+            float: left;
+        }
+        .education{
+            text-align: center;
+
+        }
+        .About{
+                background-color: black;
+                margin-top: 50px;
+                color: gainsboro;
+                height: 225px;
+            }
+            .image{
+                float: right; 
+                margin-right: 100px;
+            }
+            .prof{
+                height: 180px;
+                width: 180px;
+                border-radius: 50%;
+                border: 5px solid #000;
+            }
+            .aboutme{
+                text-align: center;
+            }
+            .aboutpara{
+                text-align: center;
+                margin-bottom: 20px;
+                font-style: italic;
+            }
+            .name{
+                margin-left: 50px;
+            }
+            marquee{
+                width: 50%;
+            }
+            .instit{
+                text-align: center;
+                background-color: black;
+                color:gainsboro;
+                width: 50%;
+                height: 50%;
+            }
+            form{
+                color: gainsboro;
+                background-color: black;
+                width: 35%;
+                height: 100%;
+                font-size: 30px;
+            }
+            button {
+              padding: 10px 15px;  
+              background-color: #00bfff;  
+              color: gainsboro;  
+              border-radius: 5px;  
+              cursor: pointer;  
+  
+          }
+          input{
+            height: 30px;
+            width: 300px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+          }
+          textarea{
+            width: 280px;
+          }
+            @media (max-width: 768px) {
+            nav{
+                height: 20%;
+            }
+            .nav-left,.nav-right {
+                   width: 100%;
+                   margin-top: 20px;
+            }
+            .nav-right {
+            float: left;
+            display: flex;
+            width: 100%;
+    }
+            .title {
+                margin-top: 200px;
+                margin-left:  20px;
+            }
+            .name{
+                margin-left:  20px;
+            }
+            .para{
+                margin-left: 130px;
+            }
+            .button{
+                margin-left: 100px;
+            }
+            .icons{
+                margin-left:150px ;
+                margin-bottom: 15px;
+            }
+            ul {
+                flex-direction:column ;
+            }
+            .nav-left  {
+                margin-right: 250px;
+                margin-left: 250px;
+                height: 20px;
+            }
+            .nav-right  li{
+                 
+                margin-top: 15px;
+            }
+            .About {
+                height: 300px;
+            }
+            .image{
+                margin-right: 20px;
+            }
+            .prof {
+                height: 120px;
+                width: 120px;
+                margin-top: 2px;
+            }
+            .instit{
+                width: 88%;
+            }
+            marquee{
+                width: 70%;
+            }
+            .swrnimg {
+                margin-right: 2px;
+                width: 40px;
+                height: 40px;
+            }
+            form{
+                color: gainsboro;
+                background-color: black;
+                width: 85%;
+
+                font-size: 20px;
+            }
+            button {
+              padding: 10px 15px;  
+              background-color: #00bfff;  
+              color: gainsboro;  
+              border-radius: 5px;  
+              cursor: pointer;  
+          }
+          textarea{
+            width: 250px;
+          }
+          input{
+            height: 30px;
+            width: 220px;
+          }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <div class="nav-left">
+                <img class="logo" src="https://th.bing.com/th/id/OIP.5oou4wcX_qwayS3vh3QDWAHaHa?w=152&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="Logo"/>
+                <p class="logoname">Chaitanya</p>
+            </div>
+            <div class="nav-right">
+                <li><a href="#" id="hello">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="image">
+        <img class="prof" src="profile1.jpg" alt="Logo"/>
+    </div>
+    <div class="title">
+        <h1>Hello, I am <br></div><div  class="name"><h1>Chaitanya Anjenaya Subbi Reddy Karri</h1></div></h1>
+        <p class="para">a web developer</p>
+        <div class="icons">
+            <a href="www.linkedin.com/in/chaitanya-reddy-b2082a2a5" target="_blank"><img src="linkedin.png"></a>
+            <a href="https://github.com/chaitanya9991ad" target="_blank"><img src="git1.png"></a>
+        </div>
+    <div class="buttontag">
+        <a class="button" href="resume.pdf">Download Resume</a>
+    </div><br>
+    <br><hr>
+     <div class="About">
+        <h2 class="aboutme"><br><u>About Me</u></h2>
+        <p class="aboutpara">I am a final-year Computer Science student at Swarnandhra College of Engineering And Technology with a passion for web development.<br>
+             <br>I am continuously improving my skills in Java, MySQL,Git, and front-end technologies.<br>
+              <br>My projects are focused on efficiency and scalability, and I love working on innovative tech solutions.</p>
+     </div>
+     <center>
+     <div class="educational">
+           <h2 class="education"><u>Education</u></h2><br>
+           <div class="instit">
+            
+            <p><br><strong><img class="swrnimg" src="swrn.png" alt="Logo"/>Swarnandhra College of Engineering and Technology</strong><br><p>B.Tech in CSE & Business Systems(2022-2026), 8.02/10 CGPA</p></p><br><hr>
+            <p><br><strong><img class="swrnimg" src="aditya.jpeg" alt="Logo"/>Aditya Junior College</strong><br><p>Intermediate(2020-2022), 794/1000 marks</p></p><hr>
+            <p><br><strong><img class="swrnimg" src="scet.png" alt="Logo"/>Sri Chaitanya Techno School</strong><br><p>Secondary Education(2019-2020), 85% marks</p></p><br>
+        </div>
+     </div>
+        <br><h2><u>Skills</u></h2><br>
+        <marquee>
+            <img class="swrnimg" src="htmllogo.png" alt="Logo"/>
+            <img class="swrnimg" src="CSS.png" alt="Logo"/>
+            <img class="swrnimg" src="javalogo.png" alt="Logo"/>
+            <img class="swrnimg" src="git.png" alt="Logo"/>
+            </marquee><br><br><br>
+            <form>
+                <br><h3><u>Contact Me</u></h3>
+                Name :<br><input type="text" placeholder="Enter your name"><br>
+                E-Mail :<br><input type="email" placeholder="Enter your E-mail"><br>
+                Message :<br><br><textarea rows="4"></textarea><br><br>
+                <button type="submit" >Send Message</button><br><br>
+            </form><br>
+    </center>
+</body>
+</html>
